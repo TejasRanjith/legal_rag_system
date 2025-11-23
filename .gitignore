@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.enc
+*.db
+storage/
+OllamaSetup.exe
+secret.key
+chroma_db/
