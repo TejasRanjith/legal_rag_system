@@ -26,6 +26,7 @@ class Document(Base):
     upload_date = Column(DateTime, default=datetime.datetime.utcnow)
     owner_id = Column(Integer, ForeignKey('users.id'))
     encrypted_path = Column(String, nullable=False)
+    description = Column(String, default="No description available.")
 
 def init_db(db_path='sqlite:///legal_rag.db'):
     engine = create_engine(db_path)
